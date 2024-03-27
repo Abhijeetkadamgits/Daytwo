@@ -1,16 +1,16 @@
 var ele = gsap.timeline();
 
 ele.from("#logo,#first-h1", {
-  y:-80,
+  y:-100,
   duration :1.5,
   opacity :0.1,
   stagger : 0.2
 });
-ele.from("#left-img",{
-  duration: 2, 
-  scale: 3,
+gsap.from("#left-img",{
+  duration: 1.5, 
+  y : 100,
 });
-ele.from("#right-img",{
-  duration: 2, 
-  scale: 0.3,
+gsap.from("#right-img",{
+  y:-100,
+  duration:1.5
 });
